@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NBA Finals</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-------Navigation Bar--->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <h1 class="animate__animated animate__flip">NBA Finals!</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Data and background info</a>
+            <a class="dropdown-item" href="#">Stats and Scores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Players and Highlights</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--------------Navigation Bar End------------------>
+  <!--Data and Information!-->
+  <div id="link">My video</div>
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+          <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--put cards into row. each card is a columun.-->
+  <section id="Card-section">
+    <div class="container-fluid ">
+      <div class="row d-flex justify-content-center align-items-center h-100 position-relative">
+        <div class="row d-flex justify-content-center">
+          <!-- card 1 -->
+          <div id="laker1" class="col-3 h-100">
+            <div id="Card1">
+              <h2>Game 1</h2>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://s.yimg.com/ny/api/res/1.2/DoQKkK2D.s0g.7oLX6I1aQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/07ce2100-053f-11eb-9ffd-6e89f88d5422"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Lakers Dominate the Heat</h5>
+                  <p class="card-text">Anthony Davis and the Lakers trample the Heat 116-98 in game 1 of a historical
+                    finals matchup.</p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Game1">Game 1
+                    Info</button>
+                </div>
+              </div>
+            </div>
+            <!-- modal 1 -->
+            <div class="modal fade" id="Game1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Game Summary</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    The lakers
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div id="laker2" class="col-3 h-100">
+            <h2>Game 2</h2>
+            <div class="card">
+              <img class="card-img-top"
+                src="https://ftw.usatoday.com/wp-content/uploads/sites/90/2020/09/AP-NBA-Finals-Heat-Lakers-Basketball-2.jpg?w=1000&h=600&crop=1"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lakers continue to silence the Heat</h5>
+                <p class="card-text">Anthony Davis and the Lakers trample the Heat 116-98 in game 1 of a historical
+                  finals matchup.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Game2">Game 2
+                  Info</button>
+              </div>
+            </div>
+            <div class="modal fade" id="Game2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                  <!---Modal!--->
+                  <!--End of Game 2!-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  card3 -->
+          <div id="heat1" class="col-3 h-100">
+            <div id="card">
+              <div>
+                <h2>Game 3</h2>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://pippenainteasy.com/wp-content/uploads/getty-images/2017/07/1267030597.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">The Heat catch fire</h5>
+                    <p class="card-text">Anthony Davis and the Lakers trample the Heat 116-98 in game 1 of a historical
+                      finals matchup.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Game3">Game 1
+                      Info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Card!-->
+            <!--- Modal --->
+            <div class="modal fade" id="Game3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Game Stats</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 4 -->
+    <div class="col-3 h-100">
+      <div id="card">
+        <div>
+          <h2>Game 4</h2>
+          <div class="card">
+            <img class="card-img-top"
+              src="https://www.dailynews.com/wp-content/uploads/2020/10/NBA-Finals-Lakers-Heat-Basketball-10-2-1.jpg?w=620"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">The Heat bring the fire to take their first win</h5>
+              <p class="card-text">Anthony Davis and the Lakers trample the Heat 116-98 in game 1 of a historical finals
+                matchup.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Game4">Game 1
+                Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Card!-->
+      <!--- Modal --->
+      <div class="modal fade" id="Game4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Game Stats</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!--Players and Highlights!-->
+  <div>
+  </div>
+  <!--Players and Highlights!-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
